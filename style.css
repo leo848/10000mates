@@ -1,0 +1,9 @@
+#myBoard {
+	position: absolute;
+	height: 70vmin;
+	width: 70vmin;
+	min-height: 300px;
+	min-width: 300px;
+	left: 50%;
+	transform: translate(-50%);
+}
