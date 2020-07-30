@@ -1,9 +1,25 @@
+body {
+	background-color: #333333;
+	font-family: -apple-system, BlinkMacSystemFont,
+		"Inter", 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+	color: white;
+}
+
+#container {
+	text-align: center;
+}
+
 #myBoard {
-	position: absolute;
+	position: relative;
 	height: 70vmin;
 	width: 70vmin;
 	min-height: 300px;
 	min-width: 300px;
-	left: 50%;
-	transform: translate(-50%);
+
+	margin: 0 auto;
+}
+
+#index {
 }
