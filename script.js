@@ -1,5 +1,4 @@
 (function (){
-
 	var currentParams = (function (url){
 		var params = {};
 		var parser = document.createElement('a');
@@ -16,8 +15,9 @@
 	})(window.location.url);
 
 	if ('fen' in currentParams) {
-		document.body.innerHTML =
-			FENS[currentParams.fen];
+		document.body.innerHTML = `${FENS[
+			currentParams.fen
+		]}`;
 		return;
 	}
 	function randomChessFensIndex (){
@@ -34,13 +34,24 @@
 	var board = null;
 	var isAbleToMove = true;
 
-	let time = 60;
+	var time = 60;
 
 	let timerInterval = setInterval(() => {
 		if (time >= 0) {
 			time -= 0.1;
-			$('#timer').html(
-				Math.round(time * 10) / 10,
+			$('#bar').css(
+				'width',
+				Math.round(time * 10) /
+					10 *
+					(100 / 60) +
+					'%',
+			);
+			$('#bar').css(
+				'background-color',
+				`hsl(${time * 2.4}, 100%, 50%)`,
+				// 'hsl(' +
+				// 	 +
+				// 	', 100, 50)',
 			);
 		}
 	}, 100);
@@ -102,6 +113,9 @@
 				'Game over, ' +
 				moveColor +
 				' is in checkmate.';
+			$('#score').html(
+				$('#score').html() - -1,
+			);
 			setTimeout(nextIndex, 500);
 		} else {
 			isAbleToMove = false;

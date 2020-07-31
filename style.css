@@ -31,3 +31,26 @@ a {
 #timer {
 	font-size: 50px;
 }
+
+#timer-progress {
+	position: relative;
+	width: 25%;
+	background-color: grey;
+	overflow: hidden;
+	border-radius: 50px;
+	margin: 10px auto;
+}
+
+#bar {
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background-color: green;
+	transition: 0.5s;
+}
+
+#score {
+	position: relative;
+	margin: 0 auto;
+	font-size: 50px;
+}
