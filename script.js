@@ -54,9 +54,15 @@
 				// 	 +
 				// 	', 100, 50)',
 			);
+		} else {
+		isAbleToMove = false;
+			splash_screen();
 		}
 	}, 100);
 
+	
+	
+	
 	function onDragStart (
 		source,
 		piece,
@@ -194,4 +200,6 @@
 	nextIndex();
 
 	$('#nextButton').on('click', nextIndex);
+	
+	function splash_screen(){};
 })();
