@@ -1,4 +1,5 @@
 (function (){
+	document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
 	var currentParams = (function (url){
 		var params = {};
 		var parser = document.createElement('a');
