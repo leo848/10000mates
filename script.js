@@ -201,5 +201,8 @@
 
 	$('#nextButton').on('click', nextIndex);
 	
-	function splash_screen(){};
+	function splash_screen(){
+		$(document).html()
+	
+	};
 })();
