@@ -202,7 +202,7 @@
 	$('#nextButton').on('click', nextIndex);
 	
 	function splash_screen(){
-		document.body.innerHTML += "<div id=\"splashscreen\">Gut gemacht!</div>;
+		document.body.innerHTML += '<div id="splashscreen">Gut gemacht!</div>';
 	
 	};
 })();
