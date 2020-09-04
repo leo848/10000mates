@@ -1,4 +1,5 @@
 (function (){
+	try {
 	document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
 	var currentParams = (function (url){
 		var params = {};
@@ -204,5 +205,7 @@
 	function splash_screen(){
 		document.body.innerHTML += '<div id="splashscreen">Gut gemacht!</div>';
 	
-	};
+	};}
+	catch (e) {
+	alert(e)}
 })();
