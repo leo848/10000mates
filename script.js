@@ -204,6 +204,7 @@
 	$('#splash').on('click', splash_screen);
 	
 	function splash_screen(){
+		document.write("lol")
 		document.body.innerHTML += '<div id="splashscreen">Gut gemacht!</div>';
 	
 	};}
