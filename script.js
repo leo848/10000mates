@@ -201,6 +201,7 @@
 	nextIndex();
 
 	$('#nextButton').on('click', nextIndex);
+	$('#splash').on('click', splash_screen);
 	
 	function splash_screen(){
 		document.body.innerHTML += '<div id="splashscreen">Gut gemacht!</div>';
