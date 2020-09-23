@@ -212,7 +212,10 @@
 		nextIndex();
 
 		$('#nextButton').on('click', nextIndex);
-		$('#splash').on('click', splash_screen);
+		$('#splash').on('click', setCookie("highscore", "", -1));
+		$('#lash').on('click', () => {
+			time = 10
+		});
 
 		function splash_screen() {
 			if (Number(getCookie("highscore")) < score) {
