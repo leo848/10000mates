@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<script src="jquery.js"></script>
-		
-		<link rel="stylesheet" type="text/css" href="chessboard.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta charset="utf-8" />
 
-	</head>
-	<body>
-		<div id="container">
-			<div id="score">0</div>
-			<div id="timer-progress">
-				<div id="bar"></div>
-			</div>
-			<div id="myBoard"></div>
-			<div id="index"><span id="side-to-move">Weiß</span> am Zug • #<span id="fen-id">1234</span> • <a id="solution" target="_blank">Lösung ansehen</a></div>
-			<button id="splash">splashscreen</button>
+<head>
+	<script src="jquery.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="chessboard.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8" />
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="score">0</div>
+		<div id="timer-progress">
+			<div id="bar"></div>
 		</div>
-		<script src="chess.js"></script>
-		<script src="chessboard.js"></script>
-		<script src="FENS.js"></script>
-		<script src="script.js"></script>
-	</body>
+		<div id="myBoard"></div>
+		<div id="index"><span id="side-to-move">Weiß</span> am Zug • #<span id="fen-id">1234</span> • <a id="solution"
+				target="_blank">Lösung ansehen</a></div>
+		<button id="splash">splashscreen</button>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script src="chess.js"></script>
+	<script src="chessboard.js"></script>
+	<script src="FENS.js"></script>
+	<script src="script.js"></script>
+</body>
+
 </html>
