@@ -218,7 +218,7 @@
 		});
 
 		function splash_screen() {
-			if (Number(getCookie("highscore")) < score) {
+			if (score > Number(getCookie("highscore"))) {
 				setCookie("highscore", score, 365)
 			}
 
