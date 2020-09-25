@@ -252,6 +252,6 @@
 			return "";
 		}
 	} catch (e) {
-		alert(e)
+		Swal.fire(e)
 	}
 })();
