@@ -3,6 +3,8 @@
 		document.body.addEventListener('touchstart', function (e) {
 			e.preventDefault();
 		});
+		
+		Swal.fire("Highscore" + getCookie("highscore"))
 
 		let score = 0;
 
